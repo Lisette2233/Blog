@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Style/css/Style.css">
+    <link rel="stylesheet" type="text/css" href="Style/fontawesome-free-5.15.1-web/css/all.css">
+    <title>Oxford Learner's Dictionaries</title>
+    <script src="Scripts/jquery/jquery-3.5.1.min.js"></script>
+    <script src="Scripts/popper/popper.min.js"></script>
+    <script src="Scripts/js/bootstrap.min.js"></script>
+    <script src="Scripts/js/scripts.js"></script>
+</head>
+<body>
+<div class="padding-content border-bottom">
+    <nav class="navbar navbar-expand-sm p-0">
+        <a class="navbar-brand" href="#">
+            <img src="Images/OLD_logo.svg" width="250px" height="14px" alt="logo">
+        </a>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+                <button id="button-redeem" type="button" class="btn">Redeem</button>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+                <button id="button-upgrade" type="button" class="btn">Upgrade</button>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+                <button id="button-help" type="button" class="btn">Help</button>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+                <button id="button-sign" type="button" class="btn"><i class="fas fa-user"></i> Sign in</button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+</div>
+<div class="padding-content">
+    <ul class="nav nav-tabs">
+        <li class="nav-item dropdown">
+          <a id="dropdown-dictionaries" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Dictionaries</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Dictionaries home</a>
+            <a class="dropdown-item" href="#">English</a>
+            <a class="dropdown-item" href="#">American English</a>
+            <a class="dropdown-item" href="#">Academic</a>
+            <a class="dropdown-item" href="#">Collocations</a>
+            <a class="dropdown-item" href="#">German-English</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle dropdown-custom1" data-toggle="dropdown" href="#">Grammar</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Grammar home</a>
+              <a class="dropdown-item" href="#">Pratical English Usage</a>
+              <a class="dropdown-item" href="#">Learn & Pratise Grammer (Beta)</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle dropdown-custom1" data-toggle="dropdown" href="#">World Lists</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Word Lists home</a>
+              <a class="dropdown-item" href="#">My Word Lists</a>
+              <a class="dropdown-item" href="#">Topics</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle dropdown-custom1" data-toggle="dropdown" href="#">Resources</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Resources home</a>
+              <a class="dropdown-item" href="#">Text Checker</a>
+            </div>
+        </li>
+      </ul>
+</div>
+<div class="clearfix"></div>
+<nav id="bg-search" class="navbar navbar-expand-sm justify-content-center">
+    <form class="form-inline">
+        <div class="dropdown">
+            <a id="dropdown-label-search" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">English</a>
+            <div id="dropdown-menu-search" class="dropdown-menu">
+              <a id="c1" class="dropdown-item h-item-search" href="#" onclick="swap('English')">English</a>
+              <a id="c2" class="dropdown-item h-item-search" href="#" onclick="swap('American English')">American English</a>
+            </div>
+        </div>
+        <input id="search-bar" type="text" placeholder="Search Oxford Advanced American Dictionary">
+        <button id="button-key" class="btn"><i class="fas fa-keyboard"></i></button> 
+        <button id="button-search" class="btn" type="submit"><i class="fas fa-search"></i></button>
+    </form>
+</nav>
+<div class="clearfix"></div>
+<div class="row padding-content mt-5">
+  <div class="col-8 d-flex box-border">
+    <div>
+      <h5>Recent additions to OALD</h5>
+      <p>2020 has been quite a year and as it comes to a close, here are just a few of the 110+
+         words and meanings we've added to the Oxford Advanced Learner's Dictionary online:</p>
+      <ul>
+        <li>Words related to the pandemic, such as <a class="bold-link" href="#">self-isolate</a>, <a class="bold-link" href="#">contact tracing</a> and, of course, <a>Covid-19</a>.</li>
+        <li>Words to do with social issues, such as <a class="bold-link" href="#">gender-fluid</a>, <a class="bold-link" href="#">unconscious bias</a> and <a class="bold-link" href="#">Generation Z</a>.</li>
+        <li>Other words that have become more common, such as <a class="bold-link" href="#">ultramarathon</a>, <a class="bold-link" href="#">plant-based</a> and <a class="bold-link" href="#">inspo</a>.</li>
+      </ul>
+      <a href="#">See the full list of additions</a>
+      <br/>
+      <a href="#">Read our blog</a>
+    </div>
+    <div>
+      <img src="Images/OLD_home_newwords.png" alt="anh_2">
+    </div>
+  </div>
+  <div></div>
+</div>
+</body>
+</html>
